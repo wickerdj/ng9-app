@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./tv-rating-form.component.scss'],
 })
 export class TvRatingFormComponent implements OnInit {
+  @Input() title: string | null;
+
   tvShows = [
     { title: 'Better call Saul!' },
     { title: 'Breaking Bad' },
