@@ -8,10 +8,10 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class TvRatingFormComponent implements OnInit {
   tvShows = [
-    { name: 'Better call Saul!' },
-    { name: 'Breaking Bad' },
-    { name: 'Lost' },
-    { name: 'Mad men' },
+    { title: 'Better call Saul!' },
+    { title: 'Breaking Bad' },
+    { title: 'Lost' },
+    { title: 'Mad men' },
   ];
 
   form = new FormGroup({
