@@ -25,7 +25,7 @@ export class TvRatingFormComponent implements OnInit {
   constructor(private titleSvc: TitleService) {}
 
   ngOnInit(): void {
-    this.titleSvc.update('new title!');
+    // this.titleSvc.update('new title!');
   }
 
   submit() {
